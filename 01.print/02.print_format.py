@@ -42,3 +42,9 @@ print('원주율 :',format(3.141592,'.2f'))
 print('금액 :',format(500,'7d'))
 print('금액 :',format(2000,'7d'))
 print('금액 :',format(3985000,'3,d'))
+print('-'*20)
+
+# f스트링
+print('두 수의 합은', 3+5, '입니다')
+print(f'두 수의 합은 {3+5}입니다')
+
