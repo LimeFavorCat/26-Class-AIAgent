@@ -8,6 +8,7 @@
 '''
 
 print(1)
+print(4.3)
 a=1
 b=2
 print(a+b,b)
