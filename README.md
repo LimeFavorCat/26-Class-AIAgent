@@ -1,2 +1,2 @@
-# 26-class00
-사전교육 깃허브 듀토리얼
+# 26-class-AIAgent
+더조은 아카데미 AI Agent - 파이썬 교육
