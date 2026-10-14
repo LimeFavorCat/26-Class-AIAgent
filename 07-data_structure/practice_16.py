@@ -8,7 +8,7 @@ import random
 
 # ========================================================= setting
 ROTO_LEN = 6
-ROTO_RANGE = (1,12)
+ROTO_RANGE = (1,8)
 ROTO_PRICE = 10000
 ROTO_COMMENTS = [
     "일주일 동안 기다려온 설렘의 순간! 로또복권 당첨 번호를 지금 공개합니다.",
@@ -82,13 +82,16 @@ while True:
             else:
                 roto_ticket[i][j] = 'X'
         input()
-        print(f'{i+1:2d}번 티켓 - {hit:2d}개 일치 - 보상금 {ROTO_REWARD[hit]}원')
+        print(f'{i+1:2d}번 티켓 - {roto_ticket[i]} {ROTO_LEN + 1 -hit:2d}등 - {ROTO_REWARD[hit]}원')
         reward += ROTO_REWARD[hit]
 
-    print(f'\n\n최종 보상 : {reward}원')
+    print(f'\n\n최종 보상 : {reward:3,d}원')
     money += reward
     if money < 0:
-        print(f'{turn}턴 만에 빛을 못값아 사망하셨습니다.')
+        print(f'현재 빛 {-1*money:3,d}원.... {turn}주 만에 빛을 못값아 사망하셨습니다.')
+        break
+    elif money > 1000000:
+        print(f'당신은 {turn}주 만에 경제적 자유를 얻었습니다.')
         break
     else:
         print('도박은 계속됩니다....')
