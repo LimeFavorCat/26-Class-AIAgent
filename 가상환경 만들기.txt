@@ -1,0 +1,7 @@
+# 가상환경 만드는 법
+
+
+1. Comand Prompt 터미널을 연다
+2. python -m venv [가상환경 이름]       ->      가상환경 생성
+3. [가상환경 이름]\Scripts\activate.bat ->      가상환경 실행
+

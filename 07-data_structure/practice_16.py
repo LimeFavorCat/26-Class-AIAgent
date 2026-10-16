@@ -94,5 +94,5 @@ while True:
         print(f'당신은 {turn}주 만에 경제적 자유를 얻었습니다.')
         break
     else:
-        print('도박은 계속됩니다....')
+        print('당신은 살아남았습니다. 도박은 계속됩니다....')
         turn += 1
