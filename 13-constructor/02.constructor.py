@@ -12,6 +12,8 @@ class Car:
 
 mycar = Car()
 mycar2 = Car(model='E-class')
+mycar3 = Car(40)
 
 mycar.output()
 mycar2.output()
+mycar3.output()

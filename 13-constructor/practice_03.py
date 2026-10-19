@@ -2,12 +2,18 @@
 은행 : 개설할 때 계좌주 이름과 초기 예금액을 넣어줌
         입금하면 잔고 변경
         출금 잔고 변경
+
+        ?? 
 '''
 
 class Account:
     def __init__(self, user_name, money):
         self.user_name = user_name
         self.__money = money
+
+    def __str__(self):
+        result = f'[{self.user_name}님의 계좌 정보] (현재 잔액 : {self.__money:3,d})\n'
+        return result
 
     def deposit(self, amount):
         self.__money += amount
@@ -20,8 +26,10 @@ class Account:
         else:
             self.__money -= amount
             print(f'{amount:3,d}원 출금되었습니다.\n잔액 : {self.__money:3,d}\n')
+            
 
 user1 = Account('홍길동', 1000000)
+print(user1)
 user1.deposit(100000)
 user1.exposit(1000000)
 user1.exposit(1000000)
