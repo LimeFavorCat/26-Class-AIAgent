@@ -20,7 +20,6 @@ class E(B,C):
 d = D()
 e = E()
 
-
 # MRO(Method Resolution Order) : 다중 상속시 메서드를 찾는 순서
 print(D.mro()) # D -> (B, C) -> ((A),)
 
