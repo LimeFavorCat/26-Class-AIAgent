@@ -164,3 +164,21 @@ print(f"""
 10.10. 
 {scores[:2,1:3]}
 """)
+
+# 추가 문제
+import numpy as np
+
+a = np.array([[[1,2,3],
+               [4,5,6]],
+              [[7,8,9],
+               [0,1,2]]
+])
+
+sumr = a.sum(axis=0) # 층별 총합 (z)
+print(sumr, sumr.shape,'\n')
+
+sumr = a.sum(axis=1) # 열별 총합 (y)
+print(sumr, sumr.shape,'\n')
+
+sumr = a.sum(axis=2) # 행별 총합 (x)
+print(sumr, sumr.shape,'\n')
